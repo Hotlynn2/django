@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'DjangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'hotspotbase',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'Localhost',
+        'PORT': '3306',
     }
 }
 
