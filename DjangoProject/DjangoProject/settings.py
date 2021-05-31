@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'DjangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hotspotbase',
+        'NAME': 'mydjango',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'Localhost',
