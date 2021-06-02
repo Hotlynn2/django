@@ -7,15 +7,21 @@ class News(models.Model):
     title = models.CharField(default= "Title", max_length=30)
     description = models.TextField()
 
+    def __str__(self):
+        return self.author
+
 
 class Sports(models.Model):
     author = models.CharField(max_length=30)
     title = models.CharField(max_length=30)
     description = models.TextField()
 
+    def __str__(self):
+        return self.author
 
 
 
+ 
 
 
 
