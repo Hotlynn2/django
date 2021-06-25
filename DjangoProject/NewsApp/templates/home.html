@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
 
+{% block title %}
+homepage
+{% endblock %}
 
-{% Bodystart %}
+
+{% block body %}
 
 <h1>This is the newest homepage</h1>
 <p>Powered by inheritance</p>
 
-{% Bodyend %}
+<h2>My name is {{name}}</h2>
+
+{% endblock %}

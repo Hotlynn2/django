@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
 
+{% block title %}
+news page
+{% endblock %}
 
-{% Bodystart %}
+{% block body %} 
 
 <h1>This is the novel news page.</h1>
 <p>Follow for more information</p>
 
-{% Bodyend %}
+<h3>We need these programming languages : {{programming_list}} </h3>
+
+{% endblock %}
