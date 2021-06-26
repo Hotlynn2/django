@@ -11,4 +11,12 @@ news page
 
 <h3>We need these programming languages : {{programming_list}} </h3>
 
+{% for lang in programming_list %}
+
+<ul>
+    <li>{{lang}}</li>
+</ul>
+
+{% endfor %}
+
 {% endblock %}
