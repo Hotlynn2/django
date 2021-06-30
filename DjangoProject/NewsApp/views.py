@@ -36,6 +36,10 @@ def Contact(request):
         'new' : obj
     }
 
-
-
     return render(request, 'contact.html')
+
+def Register(request):  
+
+   
+
+    return render(request, 'register.html')
