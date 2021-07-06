@@ -1,6 +1,7 @@
 # from DjangoProject import NewsApp
 from django.shortcuts import render
 from .models import News
+from .forms import RegistrationForm
 
 # Create your views here.
 
@@ -39,7 +40,11 @@ def Contact(request):
     return render(request, 'contact.html')
 
 def Register(request):  
+    
+    context = {
 
-   
+        'form' : RegistrationForm
+    
+   }
 
-    return render(request, 'register.html')
+    return render(request, 'register.html', context)
